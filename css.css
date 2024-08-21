@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    font-family: Young;
+
+}
+
+@font-face {
+    font-family: Young;
+    src:url(YoungSerif-Regular.ttf)
+}
+
+/* .col-lg-4{
+    width: 33%
+} */
+
+/* desktop screen */
+@media (min-width: 992px){
+    .row > div {
+    width: 33.33%;
+    float: left;
+}
+}
+
+/* tablet screen */
+@media (min-width: 768px) and (max-width: 991px) {
+    .row > div:first-child {
+    width: 50%;
+    margin-bottom: 0%;
+    
+}
+
+.row{ 
+    margin-bottom: 0%;
+}
+
+.row > div:nth-child(2) {
+    width: 50%;
+    margin-bottom: 0;
+    
+}
+.row >div:last-child {
+    width: 100%;
+} 
+
+} 
+
+/* mobile screen */
+
+@media (max-width: 767px) {
+    .row > div:first-child {
+        width: 100%;
+        margin-bottom: 0%;
+        
+    }
+    
+    .row{ 
+        margin-bottom: 0%;
+    }
+    
+    .row > div:nth-child(2) {
+        width: 100%;
+        margin-bottom: 0;
+        
+    }
+    .row >div:last-child {
+        width: 100%;
+    } 
+}
+
+html, body, .container {
+    margin: auto;
+}
+.row{
+    width:100%;
+    height: 100%;
+    
+}
+
+.row>div {
+    width: 33.33%;
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+
+p {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 25px 10px 10px 10px ;
+    background-color: rgb(159, 166, 166);
+    width: 99%;
+    position: relative;
+    
+}
+
+p,span {
+    border: 1px solid black;
+    
+}
+
+h1{
+    text-align: center;
+    font-size: 175%;
+}
+
+p span {
+    font-size: 125%; 
+    width: 100px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    /* chicken, beef, sushi  ; relative and absolute positioning*/
+}
+
+.chicken {
+    background-color: rgb(179, 220, 188);
+    
+}
+.beef{
+    background-color: rgb(126, 111, 139);
+}
+
+.sushi{
+    background-color: rgba(138, 11, 17, 0.797);
+}
